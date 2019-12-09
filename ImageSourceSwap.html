@@ -3,9 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>Swapping the Image Source</title>
+    <script type="text/javascript">
+      function swapImages(){
+        document.getElementById('img1').src="img/img2.gif";
+      }
+      function swapAgain(){
+        document.getElementById('img1').src="img/img1.jpg";
+      }
+
+      function yes(){
+        alert("My Image!!!!");
+      }
+    </script>
   </head>
   <body>
-    <img src="" id="img1" />
+    <img src="img/img1.jpg" id="img1" onmouseover="swapImages()" onmouseout="swapAgain()" onclick="yes()"/>
 
   </body>
 </html>
