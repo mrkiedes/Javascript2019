@@ -19,8 +19,21 @@
       function calculate(){
         var status = document.getElementById("status").value;
         var income = document.getElementById("money").value;
+        var taxes;
+        if(status == "single" && income <= 84200){
+           taxes = (income - 12200) * .22;
+        }
+        if(){
 
-        
+        }
+        if(){
+
+        }
+        if(){
+
+        }
+
+        document.getElementById("output").innerHTML = taxes;
       }
     </script>
   </head>
@@ -30,6 +43,7 @@
       <option value="single">Single</option>
       <option value="married">Married</option>
     </select><br />
-    <button type="button" name="Calculate" onClick="calculate()">Calculate</button>
+    <button type="button" name="Calculate" onClick="calculate()">Calculate</button><br />
+    <div id="output"></div>
   </body>
 </html>

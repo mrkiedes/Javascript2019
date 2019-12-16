@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript Quiz 1</title>
+    <script type="text/javascript">
+      function calc(){
+        var age = document.getElementById("age").value;
+        var ed = document.getElementById("ed").value;
+
+        if(age > 18 && ed > 12){
+          alert("Graduated!");
+        }else{
+          alert("Get to Class!");
+        }
+
+      }
+
+    </script>
+  </head>
+  <body>
+    Age: <input type="text" name="age" id="age"><br />
+    Years of Ed: <input type="text" name="ed" id="ed"><br />
+    <button type="button" onClick="calc()">Submit</button>
+
+
+
+  </body>
+</html>
